@@ -11,6 +11,6 @@ return array(
        'DB_PORT'=>'3306',        // 端口 留空则取默认端口
        'DB_PREFIX'=>'think_',     //设置表前缀
        //'DB_DSN'=>'mysql://root:199698@localhost:3306/zhizhi', //配置数据库的简化方式
-       'SHOW_PAGE_TRACE'=>true,   //开启页面trace
+       'SHOW_PAGE_TRACE'=>false,   //开启页面trace
        );    
 ?>

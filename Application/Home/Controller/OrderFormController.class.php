@@ -194,9 +194,10 @@ class OrderFormController extends CommonController{
                 $db_appliance = M('ApplianceInfo');
                 foreach ($result as $key => $value) {
                     $Appdata['a_id'] = $value['a_id'];
-                    $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name');
+                    $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name,a_photo');
                     $result[$key]['a_num'] = $Appname[$value['a_id']]['a_num'];
                     $result[$key]['a_name'] = $Appname[$value['a_id']]['a_name'];
+                    $result[$key]['a_photo'] = $Appname[$value['a_id']]['a_photo'];
                 }
                 if(is_array($result)){
                     $this->assign('OrderForm',$result);
@@ -232,9 +233,10 @@ class OrderFormController extends CommonController{
                 $db_appliance = M('ApplianceInfo');
                 foreach ($result as $key => $value) {
                     $Appdata['a_id'] = $value['a_id'];
-                    $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name');
+                    $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name,a_photo');
                     $result[$key]['a_num'] = $Appname[$value['a_id']]['a_num'];
                     $result[$key]['a_name'] = $Appname[$value['a_id']]['a_name'];
+                    $result[$key]['a_photo'] = $Appname[$value['a_id']]['a_photo'];
                 }
                 if(is_array($result)){
                     //var_dump($result);
@@ -267,9 +269,10 @@ class OrderFormController extends CommonController{
         $db_appliance = M('ApplianceInfo');
         foreach ($result as $key => $value) {
             $Appdata['a_id'] = $value['a_id'];
-            $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name');
+            $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name,a_photo');
             $result[$key]['a_num'] = $Appname[$value['a_id']]['a_num'];
             $result[$key]['a_name'] = $Appname[$value['a_id']]['a_name'];
+            $result[$key]['a_photo'] = $Appname[$value['a_id']]['a_photo'];
         }
         if(is_array($result)){
             $this->assign('OrderForm',$result);
@@ -302,10 +305,12 @@ class OrderFormController extends CommonController{
         $db_appliance = M('ApplianceInfo');
         foreach ($result as $key => $value) {
             $Appdata['a_id'] = $value['a_id'];
-            $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name');
+            $Appname = $db_appliance->where($Appdata)->getField('a_id,a_num,a_name,a_photo');
             $result[$key]['a_num'] = $Appname[$value['a_id']]['a_num'];
             $result[$key]['a_name'] = $Appname[$value['a_id']]['a_name'];
+            $result[$key]['a_photo'] = $Appname[$value['a_id']]['a_photo'];
         }
+        // var_dump($result);die;
         if(is_array($result)){
             $this->assign('OrderForm',$result);
             $this->display();

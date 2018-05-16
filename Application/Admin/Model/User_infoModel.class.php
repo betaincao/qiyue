@@ -1,5 +1,5 @@
 <?php
-namespace Home\Model;
+namespace Admin\Model;
 use Think\Model;
 
 class User_infoModel extends Model{

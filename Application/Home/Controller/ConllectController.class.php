@@ -52,7 +52,7 @@ class ConllectController extends Controller{
         $dataConllect['u_id'] = $_SESSION['id'];
         $conllectIdList = $db_Conllect->where($dataConllect)->order('c_time desc')->getField('a_id',true);
     	$Objconllect = A('ApplianceInfo');
-   		$result = $Objconllect->ConllecAppliance($conllectIdList);
+        $result = $Objconllect->ConllecAppliance($conllectIdList);
    		$this->assign('Conllect',$result);
         $this->display();
     }

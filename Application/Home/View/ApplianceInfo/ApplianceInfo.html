@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,102 +8,128 @@
     <load href="__PUBLIC__/Css/common.css" />
     <load href="__PUBLIC__/Css/more.css" />
     <load href="__PUBLIC__/Js/jquery.min.js" />
-   <!--  <load href="__PUBLIC__/Js/more.js" /> -->
+    <!--  <load href="__PUBLIC__/Js/more.js" /> -->
 </head>
+
 <body>
 
-<!-- 头部的搜索框开始 -->
-<div id="head">
-    <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Images/house.png" alt="主页" id="house" /></a>
-    <p id="person-center">设备详情</p>
-</div>
-<!-- 头部的搜索框结束 -->
-
-<foreach name='ApplianceInfo' item = 'vo'>
- <script type="text/javascript">
-function save() {
-    var btn1 =  document.getElementsByClassName("bottom")[0].getElementsByTagName('button')[1];
-    var value1 = <{$Conllect}>;
-
-    if(value1 == "1")  btn1.innerHTML="已收藏";
-    else  btn1.innerHTML="收藏";
-
-
-};
-
-function date() {
-    var bt0 = document.getElementsByClassName("bottom")[0].getElementsByTagName('button')[0];
-    var value = 0;
-    //var value = <{$vo.a_state}>;
-    if ( value == "1") {
-        bt0.disabled = true;
-        //attributes[i/"属性名"].value="属性值"
-        bt0.style.backgroundColor='gray';
-    }
-    else {
-        bt0.disabled = false;
-        bt0.style.backgroundColor='';
-    }
-}
-window.onload = function(){
-    save();
-    date();
-}
-</script>
-<div class="content">
-    <!-- 主图 -->
-    <img src="__PUBLIC__/Upload/<{$vo.a_photo}>" />
-    <div id="main">
-        <div class="item"><span>名称</span><p><{$vo.a_name}></p></div>
-        <div class="item"><span>简介</span><p><{$vo.a_detail}></p></div>
-        <div class="item"><span>仪器编号</span><p><{$vo.a_num}></p></div>
-        <div class="item"><span>所属实验室</span><p><{$vo.l_name}></p></div>
-        <div class="item"><span>预约次数</span><p><{$vo.a_add}>次</p></div>
-    <div class="bottom">
-        <a href="__APP__/Home/OrderForm/dateForm/a_id/<{$vo.a_id}>"><button>预约</button></a>
-        <button id='ajax'>收藏</button>
+    <!-- 头部的搜索框开始 -->
+    <div id="head">
+        <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Images/house.png" alt="主页" id="house" /></a>
+        <p id="person-center">设备详情</p>
     </div>
+    <!-- 头部的搜索框结束 -->
+
+    <foreach name='ApplianceInfo' item='vo'>
+        <script type="text/javascript">
+            function save() {
+                var btn1 = document.getElementsByClassName("bottom")[0].getElementsByTagName('button')[1];
+                var value1 = "<{$Conllect}>";
+
+                if (value1 == "1") btn1.innerHTML = "已收藏";
+                else btn1.innerHTML = "收藏";
 
 
-    <script type="text/javascript"> 
-       $(function(){
-           $('#ajax').click(function(){                 //绑定失去焦点方法
-               var value1 = <{$Conllect}>;
+            };
 
-               if(value1 == "2") {window.location.href='__APP__/Home/Login/login'}
-               if(value1!=2){
-                   if ($('#ajax').html()== "收藏") {
-                        $('#ajax').html("已收藏");  //1
-                        var state = 1;
-                   }
-             
-               else{ $('#ajax').html("收藏"); //0
-                   var state = 0;
-               }
-         }    
-               $.get('__APP__/Home/Conllect/UpdateConllect/',{'state':state,'a_id':<{$vo.a_id}>},function(){  
-               });
-           });
-     });
-
-</script>
-
-</foreach>
-        <div>
-            <span style="margin-bottom: 10px;font-size: .8rem;padding-left:.2rem">评论</span><br>
-            <foreach name = "Comment" item = 'vo'>
-                <div class="pingLun">
-                    <h4><{$vo.u_name}></h4>
-                    <span class="time"><{$vo.c_time|date='Y-m-d H:i:s',###}></span>
-                    <p><{$vo.c_comment}></p>
+            function date() {
+                var bt0 = document.getElementsByClassName("bottom")[0].getElementsByTagName('button')[0];
+                var value = 0;
+                //var value = <{$vo.a_state}>;
+                if (value == "1") {
+                    bt0.disabled = true;
+                    //attributes[i/"属性名"].value="属性值"
+                    bt0.style.backgroundColor = 'gray';
+                } else {
+                    bt0.disabled = false;
+                    bt0.style.backgroundColor = '';
+                }
+            }
+            window.onload = function() {
+                save();
+                date();
+            }
+        </script>
+        <div class="content">
+            <!-- 主图 -->
+            <img src="__PUBLIC__/Upload/<{$vo.a_photo}>" />
+            <div id="main">
+                <div class="item"><span>名称</span>
+                    <p>
+                        <{$vo.a_name}>
+                    </p>
                 </div>
-            </foreach>
-        </div>
-    </div>
-</div>
-<!-- 底部的按钮 -->
+                <div class="item"><span>简介</span>
+                    <p>
+                        <{$vo.a_detail}>
+                    </p>
+                </div>
+                <div class="item"><span>仪器编号</span>
+                    <p>
+                        <{$vo.a_num}>
+                    </p>
+                </div>
+                <div class="item"><span>所属实验室</span>
+                    <p>
+                        <{$vo.l_name}>
+                    </p>
+                </div>
+                <div class="item"><span>预约次数</span>
+                    <p>
+                        <{$vo.a_add}>次</p>
+                </div>
+                <div class="bottom">
+                    <a href="__APP__/Home/OrderForm/dateForm/a_id/<{$vo.a_id}>"><button>预约</button></a>
+                    <button id='ajax'>收藏</button>
+                </div>
 
- 
+
+                <script type="text/javascript">
+                    $(function() {
+                        $('#ajax').click(function() { //绑定失去焦点方法
+                            var value1 = "<{$Conllect}>";
+
+                            if (value1 == "2") {
+                                window.location.href = '__APP__/Home/Login/login'
+                            }
+                            if (value1 != 2) {
+                                if ($('#ajax').html() == "收藏") {
+                                    $('#ajax').html("已收藏"); //1
+                                    var state = 1;
+                                } else {
+                                    $('#ajax').html("收藏"); //0
+                                    var state = 0;
+                                }
+                            }
+                            $.get('__APP__/Home/Conllect/UpdateConllect/', {
+                                'state': state,
+                                'a_id': "<{$vo.a_id}>"
+                            }, function() {});
+                        });
+                    });
+                </script>
+
+    </foreach>
+    <div>
+        <span style="margin-bottom: 10px;font-size: .8rem;padding-left:.2rem">评论</span><br>
+        <foreach name="Comment" item='vo'>
+            <div class="pingLun">
+                <h4>
+                    <{$vo.u_name}>
+                </h4>
+                <span class="time"><{$vo.c_time|date='Y-m-d H:i:s',###}></span>
+                <p>
+                    <{$vo.c_comment}>
+                </p>
+            </div>
+        </foreach>
+    </div>
+    </div>
+    </div>
+    <!-- 底部的按钮 -->
+
+
 
 </body>
+
 </html>

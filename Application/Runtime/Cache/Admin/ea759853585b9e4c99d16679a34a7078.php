@@ -18,7 +18,7 @@
             <td>仪器名称</td>
             <td width="50%">评论内容</td>
             <td>审核状态</td>
-            <td>c_time</td>
+            <td>创建时间</td>
             <td>操作</td>
         </tr>
 
@@ -40,7 +40,7 @@
  if((int)$vo['c_state']==1){ echo "通过"; }else{ echo "未通过"; } ?>
                 </td>
                 <td>
-                    <?php echo date('Y-m-d',$vo['c_time']);?>
+                    <?php echo date( 'Y-m-d',$vo[ 'c_time']);?>
                 </td>
                 <td>
                     [<a href="<?php echo U('approval',array('c_id'=>$vo['c_id'],'c_state'=>0));?>">重置状态</a>]

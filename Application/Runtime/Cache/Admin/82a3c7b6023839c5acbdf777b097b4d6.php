@@ -70,12 +70,6 @@
             </td>
         </tr>
         <tr>
-            <td>系统信息</td>
-            <td>
-                <?php echo php_uname();?>
-            </td>
-        </tr>
-        <tr>
             <td>数据库信息</td>
             <td>
                 <?php echo mysql_get_server_info();?>
