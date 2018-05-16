@@ -1,0 +1,118 @@
+.content{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+.content img{
+    width:10rem;
+    height:10rem;
+    margin:0.3rem auto;
+    display: block;
+}
+.content .item{
+    margin-bottom: 0.35rem;
+    padding:0.25rem 0.15rem;
+    background-color: white;
+    font-size: 0.8rem;
+}
+.content .item span{
+    display: inline-block;
+    width:5rem;
+}
+.content #main{
+    background-color: #E7E7E7;
+}
+.show{
+    height:15rem;
+    background-color: white;
+}
+.show a{
+    display:inline-block;
+    width:3.5rem;
+    font-size:1.2rem;
+    text-decoration: none;
+    text-align: center;
+    color:black;
+}
+.chose{
+    border-bottom:2px solid #DB471F;
+}
+.show #one{
+    display: block;
+    padding:1rem;
+    font-size: 0.8rem;
+}
+.show #two,#three{
+    display: none;
+    padding:1rem;
+    font-size: 0.8rem;
+}
+.coment{
+    border-top:1px solid gray;
+    width:95%;
+    margin:0 auto;
+}
+.coment h4{
+    padding:12.5px 0 6px 0px;
+    float:left;
+}
+.coment p{
+    padding-top:17px;
+}
+.item .coment .time{
+    width:8rem;
+    font-size:0.6rem;
+    color:gray;
+}
+.item{
+   overflow: hidden;
+}
+.item span{
+    display: block;
+    width:7%;
+    float:left;
+}
+.item p{
+    width:73%;
+    float:right;
+}
+.bottom{
+    background-color: rgba(0,0,0,0.9);
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:0.5rem 0;
+    text-align: center;
+}
+.bottom button{
+    width:4.5rem;
+    height:1.25rem;
+    display: inline-block;
+    background-color: #F97A52;
+    color:white;
+    border-radius:0.25rem;
+    border:none;
+}
+.bottom :last-child{
+    margin-left:0.6rem;
+}
+
+.pingLun{
+  position: relative;
+  font-size: .6rem;
+  width:98%;
+  margin:.2rem auto;
+  height:3rem;
+  background-color: white;
+}
+.pingLun h4{
+  position: absolute;right:1rem; bottom:.6rem;
+}
+.pingLun p{
+    width:78%;
+    padding:.5rem;
+    float: right;
+}
+.pingLun span{
+  position: absolute; bottom:.1rem; right:1rem;
+}

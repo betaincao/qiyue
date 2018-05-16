@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css//css/public.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td class="th" colspan="10">用户列表<a href="<{:U('add')}>">新增实验室</a></td>
+            <tr>
+                <td>ID</td>
+                <td>姓名</td>
+                <td>专业班级</td>
+                <td>电话</td>
+                <td>学号</td>
+                <td>操作</td>
+            </tr>
+
+            <foreach name="userInfo" item="vo">
+                <tr>
+                    <td>
+                        <{$vo.u_id}>
+                    </td>
+                    <td>
+                        <{$vo.u_name}>
+                    </td>
+                    <td>
+                        <{$vo.u_class}>
+                    </td>
+                    <td>
+                        <{$vo.u_phone}>
+                    </td>
+                    <td>
+                        <{$vo.u_stuid}>
+                    </td>
+                    <td>
+                        [<a href="<{:U('edit',array('u_id'=>$vo['u_id']))}>">编辑</a>] [
+                        <a href="<{:U('delete',array('u_id'=>$vo['u_id']))}>">删除</a>]
+                    </td>
+                </tr>
+            </foreach>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+
+    <load href="__PUBLIC__/Css/common.css" />
+    <!-- <load href="__PUBLIC__/Css/dateform.css" /> -->
+    <style>
+        body{
+            background-image: url("__PUBLIC__/Images/luwei2.jpg");
+        }
+        #text{
+            width:2rem;
+            height:100%;
+            margin:0 auto;
+            font-size: 0.8rem;
+        }
+        .content{
+            margin-top: 1rem;
+        }
+        .content div{
+            padding:0.25rem 0.15rem;
+        }
+        .content div label{
+            display: block;
+            width:4rem;
+            font-size: 0.8rem;
+            margin: 0.4rem 0 0.15rem 0;
+        }
+        .content div input{
+            width:12rem;
+            margin: 0.2rem  0 0.4rem 0;
+            height:1.5rem;
+            border:1px solid #5F9EA0;
+            font-size: 0.8rem;
+            padding:0 5px 0 5px;
+
+            border:1px solid rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.3);
+            color:black;
+            border-radius: 0.3rem;
+            outline: none;
+        }
+        .content div input:last-child,img{
+            vertical-align:middle;
+        }
+        .content div button{
+            width: 12rem;
+            height:1.5rem;
+            border:none;
+            border-radius: 0.25rem;
+            margin:1rem 0 0 0;
+            background-color: #5F9EA0;
+            color:white;
+            font-size: 0.8rem;
+            background-color: rgba(113,165,242,0.7);
+            /*
+            color:white;
+            font-size:0.7rem;
+            */
+        }
+        .content a{
+            font-size: 0.5rem;
+            color:red;
+        }
+        #logol{
+    height:8rem;
+    font-size:3rem;
+    padding-top:4rem;
+    text-align: center;
+    color:white;
+}
+#form{
+    width:90%;
+    text-align:center;
+    /*padding:0.25rem 0.15rem;opacity: 0.4;background-color:white;*/
+    padding-top:1.7rem;
+    border-radius: 0.5rem;
+    margin:0 auto;
+}
+/*input框前图标的样式*/
+.icon{
+    width:1.4rem;
+    height:1.4rem;
+    margin-right: 0.1rem;
+    vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+<div id="logol">
+    LOGAL
+</div>
+<div class="content">
+    <div style="width:100%;text-align:center">
+        <form class="form-signin" action="__URL__/dologin" method="POST">
+            <img src="__PUBLIC__/Images/mobile.png">
+            <input name="username" type="text"   placeholder="手机号" required autofocus><br>
+            <img src="__PUBLIC__/Images/password.png">`
+            <input name="password" type="password"  placeholder="密码" required><br>
+            <input name="code" type="text"   style="width:5rem;" placeholder="验证码" required id="inputCode">
+            <img id="img" src="__APP__/Home/Code/index" style="width:6.6rem;height:1.5rem;" onclick='this.src=this.src+"?"+Math.random()'  />
+            <button type="submit"  >登录</button><br>
+            <a href="__APP__/Home/Registered/Registered" style="margin-left: 2.3rem;">没有账号？马上去注册-></a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

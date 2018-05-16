@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css//css/public.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td class="th" colspan="10">管理员列表<a href="<{:U('add')}>">新增管理</a></td>
+            <tr>
+                <td>ID</td>
+                <td>姓名</td>
+                <td>权限</td>
+                <td>操作</td>
+            </tr>
+
+            <foreach name="adminInfo" item="vo">
+                <tr>
+                    <td>
+                        <{$vo.id}>
+                    </td>
+                    <td>
+                        <{$vo.admin_name}>
+                    </td>
+                    <td>
+                        <{$vo.power}>
+                    </td>
+                    <td>
+                        [<a href="<{:U('edit',array('id'=>$vo['id']))}>">编辑</a>] [
+                        <a href="<{:U('delete',array('id'=>$vo['id']))}>">删除</a>]
+                    </td>
+                </tr>
+            </foreach>
+    </table>
+</body>
+
+</html>

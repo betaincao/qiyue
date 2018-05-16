@@ -1,0 +1,126 @@
+  /* 类似选项卡的东西*/
+      .recommend,.choice{
+             margin:0 auto;
+             width:100%;
+             height:6rem;
+             border:0.02rem;
+             background-color: white;
+      }
+     .choice tr td img{
+              display: block;
+              margin: 0 auto;
+              border-radius: 50%;
+      }
+      .choice tr td p{
+             text-align: center;
+             font-size: 0.6rem;
+      }
+
+
+      /*个人信息*/
+      #collect,#message{
+            width:100%;
+            padding:0.5rem;
+      }
+      #collect  li,#message li{
+             margin:1rem 0;
+             padding:0 0.2rem;
+             height:1.5rem;
+             list-style: none;
+             font-size: 0.6rem;
+             background-color:white ;
+             overflow: hidden;
+      }
+     /* 我的信息*/
+      #message img{
+             float:left;
+             margin:0.3rem 1.2rem;
+
+      }
+      .Specific-information{
+             float:left;
+             width:5rem;
+             height:100%;
+             line-height: 1.5rem;
+      }
+      .brackets{
+             float:right;
+             height:1.5rem;
+             line-height: 1.5rem;
+             width:5rem;
+
+      }
+      /*我的收藏*/
+      #collect  li{
+             position: relative;
+             padding:0  .7rem;
+             height:5rem;
+             list-style: none;
+             font-size: 0.6rem;
+             background-color:white ;
+             overflow: hidden;
+      }
+      #collect img{
+             float:left;
+             margin:.3rem 0 0 1rem;
+             width:2.5rem;
+             height:3.2rem;
+             border-radius: .3rem;
+      }
+      h5{
+
+             padding:0.3rem  .8rem;
+      }
+      .choice-box li div{
+         float:left;
+         margin:.5rem 0 0 2rem;
+         width:50%;
+         height:70%;
+         font-size: .5rem;
+      }
+      .choice-box li div p{
+        margin-bottom:.3rem;
+        overflow: hidden;
+      }
+      .content{
+             float:left;
+             margin:0 1rem;
+             width:100%;
+             height:2.3rem;
+             word-wrap: break-word;
+             font-size: 0.5rem;
+             z-index: 100;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             display: -webkit-box;
+             -webkit-line-clamp:4;
+             -webkit-box-orient:vertical;
+        }
+        .name{
+           float:left;
+        }
+        .value{
+          float:right;
+          margin-left:1.5rem;
+          width:6rem;
+        }
+
+      /*  我的评论*/
+      .mode,.time{
+         position: absolute; right:1rem; bottom:.4rem;
+         width:25%;
+         height:1rem;
+         line-height: 1rem;
+         font-size: .5rem;
+      }
+      .mode{
+        position: absolute; right:4rem;
+        color:red;
+      }
+
+
+      /*最后添加的的卡通人物*/
+      #kaTong{
+        position: fixed; bottom:4rem; left:1rem;
+      }
+    

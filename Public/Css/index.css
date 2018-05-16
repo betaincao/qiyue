@@ -1,0 +1,117 @@
+body{
+             background-color: white;
+      }
+       #head form input{
+               display: block;
+               font-size: 0.9rem;
+               height:1.3rem;
+               line-height: 1.3rem;
+               border-radius: 0.4rem;
+               outline: none;
+       }
+       .search{
+             float:left;
+             display: block;
+             padding-left:0.7rem;
+             width:10rem;
+            background-color:#66CC99;
+            border-color:#009966;
+       }
+       .search-btn{
+                float:left;
+                display: block;
+                margin-left:1rem;
+                width:3rem;
+                color:white;
+                background-color:#009966; 
+                border-color: #66CC99;
+       }
+       #login a{
+          float:right;
+          font-size: .9rem;
+          color:white;
+          text-decoration: none;
+          cursor: pointer;
+       }
+
+
+
+      /* 类似选项卡的东西*/
+      .recommend,.choice{
+             margin:0 auto;
+             width:95%;
+             border:0.02rem;
+             overflow: hidden;
+      }
+      .choice div{
+         float:left;
+         margin:0.8rem 0;
+         width:25%;
+      }
+     .choice img{
+              display: block;
+              margin: 0 auto;
+              border-radius: 50%;
+      }
+      .num{
+            color:red;
+      }
+      .choice p{
+             margin-top:0.3rem;
+             text-align: center;
+             font-size: 0.6rem;
+      }
+      .recommend div{
+              float:left;
+              margin:0.1rem 0.1rem;
+              width:49%; 
+             padding:0.1rem 3rem;
+             height:5rem;
+             border:.05rem solid gray;
+      }
+      .recommend  img{
+             display: block;
+             margin:0 auto;
+             width:45%;
+             height:3rem;
+             border-radius: 50%;
+             
+      }
+      .recommend  p{
+            margin-top:0.3rem;
+            text-align: center;
+            font-size: 0.4rem;
+      }
+
+       #message{
+            display: none;
+            width:100%;
+            padding:0.5rem;
+      }
+      #message li{
+             margin:1rem 0;
+             padding:0 0.2rem;
+             height:1.5rem;
+             list-style: none;
+             font-size: 0.6rem;
+             background-color:white ;
+             overflow: hidden;
+      }
+      #message img{
+             float:left;
+             margin:0.3rem 1.2rem;
+
+      }
+      .Specific-information{
+             float:left;
+             width:5rem;
+             height:100%;
+             line-height: 1.5rem;
+      }
+      .brackets{
+             float:right;
+             height:1.5rem;
+             line-height: 1.5rem;
+             width:2rem;
+
+      }

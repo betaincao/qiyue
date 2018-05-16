@@ -1,0 +1,63 @@
+[ 2018-05-15T00:16:46+08:00 ] 106.120.161.66 /qiyue/index.php/home/orderform/vieworderform
+ERR: 无法加载控制器:Orderform
+
+[ 2018-05-15T01:36:32+08:00 ] ::1 /qiyue/index.php/home/registered/checkName?username=
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND u_state=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_login` WHERE ( u_phone= AND u_state=1 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND u_state=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_user_login` WHERE ( u_phone= AND u_state=1 ) LIMIT 1  
+
+[ 2018-05-15T02:35:11+08:00 ] 117.185.117.53 /qiyue/index.php/Home/Conllect/ShowConllect
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+
+[ 2018-05-15T10:21:40+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:21:41+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:21:41+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:16+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:18+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:18+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:19+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:20+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:20+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:20+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:21+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T10:40:21+08:00 ] 117.136.86.39 /qiyue/index.php/Home/Index/index1001%E5%99%A8%E7%BA%A6%E5%AE%9E%E9%AA%8C%E5%AE%A4%E4%BB%AA%E5%99%A8%E9%A2%84%E7%BA%A6%E5%B9%B3%E5%8F%B0
+ERR: 非法操作:index1001器约实验室仪器预约平台
+
+[ 2018-05-15T11:12:49+08:00 ] 117.185.117.51 /qiyue/index.php/Home/Conllect/ShowConllect
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+
+[ 2018-05-15T13:18:37+08:00 ] 172.21.32.9 /qiyue/index.php/Home/Conllect/ShowConllect
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+

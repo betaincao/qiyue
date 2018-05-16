@@ -1,0 +1,140 @@
+[ 2018-05-14T14:01:34+08:00 ] ::1 /qiyue/index.php/Home/Registered/reg
+ERR: 非法操作:reg
+
+[ 2018-05-14T14:03:42+08:00 ] ::1 /qiyue/index.php/Home/Registered/RegSuccess/id/1
+ERR: 1062:Duplicata du champ '1' pour la clef 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `think_user_info` (`u_id`,`u_name`,`u_class`,`u_stuid`,`u_phone`) VALUES ('1','胡汉三','科技','04142056','18189123449')
+
+[ 2018-05-14T14:27:17+08:00 ] ::1 /qiyue/index.php/Home/Login/__APP__/Index/index
+ERR: 非法操作:__APP__
+
+[ 2018-05-14T14:39:59+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003448s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 31 行.
+NOTIC: [8] Undefined index: state D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 36 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `think_conllect` WHERE `c_id` = null [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001638s ]
+
+[ 2018-05-14T15:05:06+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003612s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0093s ]
+NOTIC: [8] Undefined index: u_id D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 26 行.
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+NOTIC: [8] Undefined index: state D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 34 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = null AND `a_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: DELETE FROM `think_conllect` WHERE `c_id` = null [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002383s ]
+
+[ 2018-05-14T15:05:37+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002456s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: u_id D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 26 行.
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+NOTIC: [8] Undefined index: state D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 34 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = null AND `a_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `think_conllect` WHERE `c_id` = null [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002946s ]
+
+[ 2018-05-14T15:07:41+08:00 ] ::1 /qiyue/index.php/Home/Conllect/ShowConllect
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+
+[ 2018-05-14T15:08:20+08:00 ] ::1 /qiyue/index.php/Home/Conllect/ShowConllect
+ERR: 1064:Erreur de syntaxe près de ')' à la ligne 1
+ [ SQL语句 ] : SELECT `a_id`,`a_num`,`a_name`,`a_photo`,`l_id` FROM `think_appliance_info` WHERE `a_id` IN () 
+
+[ 2018-05-14T15:10:42+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?state=1&a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004638s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `think_conllect` (`a_id`,`u_id`,`c_time`) VALUES ('1','1','1526281842') [ RunTime:0.0584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002723s ]
+
+[ 2018-05-14T15:10:43+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?state=0&a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003577s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0071s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `think_conllect` WHERE `c_id` = 11 [ RunTime:0.0562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002634s ]
+
+[ 2018-05-14T15:10:44+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?state=1&a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003114s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0644s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_conllect` (`a_id`,`u_id`,`c_time`) VALUES ('1','1','1526281844') [ RunTime:0.0725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002982s ]
+
+[ 2018-05-14T15:10:44+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?state=0&a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004191s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0076s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `think_conllect` WHERE `c_id` = 12 [ RunTime:0.0463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003088s ]
+
+[ 2018-05-14T15:10:44+08:00 ] ::1 /qiyue/index.php/Home/Conllect/UpdateConllect/?state=1&a_id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003096s ]
+SQL: SHOW COLUMNS FROM `think_conllect` [ RunTime:0.0092s ]
+NOTIC: [8] Undefined index: datajson D:\wamp\www\qiyue\Application\Home\Controller\ConllectController.class.php 第 29 行.
+SQL: SELECT `c_id` FROM `think_conllect` WHERE `u_id` = 1 AND `a_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `think_conllect` (`a_id`,`u_id`,`c_time`) VALUES ('1','1','1526281844') [ RunTime:0.0596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003079s ]
+
+[ 2018-05-14T16:41:31+08:00 ] ::1 /qiyue/index.php/Home/Person/index.html
+ERR: 非法操作:index
+
+[ 2018-05-14T16:41:35+08:00 ] ::1 /qiyue/index.php/Home/Person/index.html
+ERR: 非法操作:index
+
+[ 2018-05-14T16:42:08+08:00 ] ::1 /qiyue/index.php/Home/Person/index.html
+ERR: 非法操作:index
+
+[ 2018-05-14T16:44:37+08:00 ] ::1 /qiyue/index.php/Home/Person/index.html
+ERR: 非法操作:index
+
+[ 2018-05-14T19:35:40+08:00 ] ::1 /qiyue/index.php/Home/Registered/reg
+ERR: 非法操作:reg
+
+[ 2018-05-14T23:12:58+08:00 ] ::1 /qiyue/index.php/home/registered/checkName?username=
+ERR: 1146:Table 'qiyue.think_user_login' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `think_user_login` LIMIT 1  
+ERR: 1146:Table 'qiyue.think_user_login' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `think_user_login` LIMIT 1  
+

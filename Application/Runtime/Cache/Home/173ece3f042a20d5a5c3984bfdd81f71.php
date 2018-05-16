@@ -1,0 +1,92 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>完善信息</title>
+    <link rel="stylesheet" type="text/css" href="/qiyue/Public/Css/common.css" />
+    <style>
+        #text{
+            width:2rem;
+            height:100%;
+            margin:0 auto;
+            font-size: 0.8rem;
+        }
+        .content{
+            margin-top: 1rem;
+        }
+        .content div{
+            padding:0.25rem 0.15rem;
+        }
+        .content div label{
+            display: block;
+            width:4rem;
+            font-size: 0.8rem;
+            margin: 0.4rem 0 0.15rem 0;
+        }
+        .content div input[type='text']{
+            width:11rem;
+            margin: 0.2rem  0 0.4rem 0;
+            height:1.5rem;
+            border:1px solid #5F9EA0;
+            font-size: 0.8rem;
+            padding:0 5px 0 5px;
+        }
+        .content div input[type='submit']{
+            width: 11rem;
+            height:1.5rem;
+            border:none;
+            border-radius: 0.25rem;
+            margin:1rem 0 1rem 0;
+            background-color: #5F9EA0;
+            color:white;
+            font-size:0.7rem;
+        }
+        .content form img{
+            width:0.4rem;
+            height:0.4rem;
+            display:none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<!-- 头部的搜索框开始 -->
+<div id="head">
+    <a href="/qiyue/index.php/Home/Index/index"><img src="/qiyue/Public/Images/house.png" alt="主页" id="house" /></a>
+    <p id="text">信息</p>
+</div>
+<!-- 头部的搜索框结束 -->
+
+<div class="content">
+    <div style="width:100%;text-align:center">
+        <?php echo ($login); ?>
+        <form method="POST" onsubmit="return testsign()" action="/qiyue/index.php/Home/Registered/RegSuccess/id/<?php echo ($id); ?>">
+            <input type='text'  name = 'name' placeholder="姓名" autocomplete="off"/><img src="/qiyue/Public/Images/alert.png" style="width: 1.5rem;height:1.5rem">
+            <input type='text'  name = 'class'  placeholder="专业班级" autocomplete="off"/><img src="/qiyue/Public/Images/alert.png" style="width: 1.5rem;height:1.5rem">
+            <input type='text'  name = 'studentid'  placeholder="学号" autocomplete="off"/><img src="/qiyue/Public/Images/alert.png" style="width: 1.5rem;height:1.5rem"><br>
+            <input type='text'  name = 'phone'  placeholder="手机号" autocomplete="off"/><img src="/qiyue/Public/Images/alert.png" style="width: 1.5rem;height:1.5rem"><br>
+           <input type="submit" value="提交" onclick="test()" />
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    function testsign() {
+        var div = document.getElementsByClassName('content')[0].getElementsByTagName('div')[0];
+        var form = div.getElementsByTagName('form')[0];
+        var inputs = form.getElementsByTagName('input');
+        var imgs = form.getElementsByTagName('img');
+        var flag=1;
+
+        for(var i=0;i<3;i++){
+            if(inputs[i].value=="") {
+                imgs[i].style.display="inline";
+                flag=0;
+            }
+        }
+        if(!flag) return false;
+        else return true;
+    }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css//css/public.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td class="th" colspan="10">评论列表</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>仪器名称</td>
+            <td>仪器内容</td>
+            <td width="50%">评论内容</td>
+            <td>创建时间</td>
+            <td>审核</td>
+        </tr>
+
+        <volist name="approvalingData" id="vo" empty='没有数据'>
+            <tr>
+                <td>
+                    <{$vo.c_id}>
+                </td>
+                <td>
+                    <{$vo.u_id}>
+                </td>
+                <td>
+                    <{$vo.a_id}>
+                </td>
+                <td>
+                    <{$vo.c_comment}>
+                </td>
+                <td>
+                    <{:date('Y-m-d',$vo['c_time'])}>
+                </td>
+                <td>
+                    [<a href="<{:U('approval',array('c_id'=>$vo['c_id'],'c_state'=>1))}>">通过</a>] [
+                    <a href="<{:U('approval',array('c_id'=>$vo['c_id'],'c_state'=>2))}>">未通过</a>]
+                </td>
+            </tr>
+        </volist>
+    </table>
+</body>
+
+</html>

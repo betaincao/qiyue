@@ -1,0 +1,49 @@
+ *{
+       		margin:0;
+       		padding:0;
+       		box-sizing: border-box;
+       }
+		html {
+		    font-size : 20px;
+		}
+		@media only screen and (min-width: 401px){
+		    html {
+		        font-size: 25px !important;
+		    }
+		}
+		@media only screen and (min-width: 428px){
+		    html {
+		        font-size: 26.75px !important;
+		    }
+		}
+		@media only screen and (min-width: 481px){
+		    html {
+		        font-size: 30px !important; 
+		    }
+		}
+		@media only screen and (min-width: 569px){
+		    html {
+		        font-size: 35px !important; 
+		    }
+		}
+		@media only screen and (min-width: 641px){
+		    html {
+		        font-size: 40px !important; 
+		    }
+		}
+       body{
+       	 font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+       	 background-color:#F2F2F2;
+       }
+       #errBox{
+       	  position: absolute; top:0;left:0;right:0;bottom: 0;
+       	  margin:auto;
+       	  width:12rem;
+       	  height:10rem;
+       }
+       #errBox h4{
+       	  float:left;
+       }
+       #errBox img{
+       	 float:left;
+       }

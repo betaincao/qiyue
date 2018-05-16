@@ -1,0 +1,73 @@
+[ 2018-05-14T21:40:05+08:00 ] ::1 /qiyue/index.php/admin/home/index.html
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2018-05-14T21:41:18+08:00 ] ::1 /qiyue/index.php/admin/home/index.html
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2018-05-14T21:41:21+08:00 ] ::1 /qiyue/index.php/admin/home/index.html
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2018-05-14T21:41:42+08:00 ] ::1 /qiyue/index.php/Admin/home/index.html
+ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+
+[ 2018-05-14T21:58:55+08:00 ] ::1 /qiyue/index.php/admin/app_info/add/l_id/4.html
+ERR: 1048:Le champ 'a_num' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `think_appliance_info` (`a_num`,`a_name`,`l_id`,`a_detail`,`a_photo`,`a_state`,`a_outtime`,`a_add`) VALUES (NULL,NULL,'4',NULL,'\\','1','1526306335','0')
+
+[ 2018-05-14T21:59:57+08:00 ] ::1 /qiyue/index.php/admin/app_info/add/l_id/4.html
+ERR: 1048:Le champ 'a_num' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `think_appliance_info` (`a_num`,`a_name`,`l_id`,`a_detail`,`a_photo`,`a_state`,`a_outtime`,`a_add`) VALUES (NULL,NULL,'4',NULL,'\\','1','1526306397','0')
+
+[ 2018-05-14T22:15:31+08:00 ] ::1 /qiyue/index.php/admin/login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2018-05-14T22:15:59+08:00 ] ::1 /qiyue/index.php/admin/login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2018-05-14T23:30:52+08:00 ] ::1 /qiyue/index.php/Admin
+ERR: 无法加载控制器:Index
+
+[ 2018-05-14T23:32:02+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('计算机应用技术协会')
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('计算机应用技术协会')
+
+[ 2018-05-14T23:33:18+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('333')
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('333')
+
+[ 2018-05-14T23:35:28+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('222')
+
+[ 2018-05-14T23:37:22+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('智邮普创工作室')
+
+[ 2018-05-14T23:40:19+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('网络科技协会')
+
+[ 2018-05-14T23:43:43+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('啊啊啊啊')
+
+[ 2018-05-14T23:44:31+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('急急急')
+
+[ 2018-05-14T23:46:36+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('3333')
+
+[ 2018-05-14T23:51:57+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('adsaa')
+
+[ 2018-05-14T23:52:18+08:00 ] ::1 /qiyue/index.php/admin/lab_info/add.html
+ERR: 1364:Field 'l_appsum' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `think_laboratory` (`l_name`) VALUES ('asasa ')
+
