@@ -54,6 +54,8 @@ class LabInfoController extends CommonController {
         $labInfo = $db->where("l_id=$id")->delete();
         if($labInfo){
             $this->success('成功!');
+            $db1 = M('ApplianceInfo');
+            $labInfo = $db1->where("l_id=$id")->delete();
         }else{
             $this->error('失败');
         }
