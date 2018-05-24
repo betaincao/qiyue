@@ -9,6 +9,9 @@ class LabInfoController extends CommonController {
         $this->assign('labInfo',$labInfo);
         $this->display();
     }
+    /**
+     * 新增实验室
+     */
     public function add(){
         if(IS_POST){
             
