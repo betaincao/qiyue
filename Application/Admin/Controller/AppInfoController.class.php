@@ -12,6 +12,9 @@ class AppInfoController extends CommonController {
         $this->assign('applianceInfo',$applianceInfo);
         $this->display();
     }
+    /**
+     * 实验室仪器的详情
+     */
     public function detail(){
         $id = $_GET['a_id'];
         $db = M('ApplianceInfo');
@@ -66,6 +69,9 @@ class AppInfoController extends CommonController {
             $this->display();
         }
     }
+    /**
+     * 删除实验室仪器
+     */
     public function delete(){
         $id = $_GET['a_id'];
         $db = M('ApplianceInfo');
@@ -83,6 +89,9 @@ class AppInfoController extends CommonController {
             $this->error('删除失败！');
         }
     }
+    /**
+     * 删除仪器
+     */
     public function edit(){
         if(IS_POST){
             $upload = new \Think\Upload();// 实例化上传类
